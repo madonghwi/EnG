@@ -1,6 +1,7 @@
 import random
 import numpy
 
+
 class Player:
     def __init__(self, name, hp, power, axe):
         self.name = name
@@ -58,8 +59,6 @@ monsters = [
     Monster("와이번", hp=512, power=30)
 ]
 monster = numpy.random.choice(monsters, p=[0.4, 0.3, 0.2, 0.1])
-
-
 
 print(f"[{monster.name} 조우]")
 
